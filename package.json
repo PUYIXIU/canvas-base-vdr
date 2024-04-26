@@ -1,0 +1,32 @@
+{
+  "name": "canvas-base-vdr",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/canvas-base-vdr.umd.cjs",
+  "module": "./dist/canvas-base-vdr.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/canvas-base-vdr.es.js",
+      "require": "./dist/canvas-base-vdr.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@gausszhou/vue3-drag-resize-rotate": "^3.0.2",
+    "element-plus": "^2.7.1",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "sass": "^1.75.0",
+    "vite": "^5.2.0"
+  }
+}
